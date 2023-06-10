@@ -1,0 +1,11 @@
+<h1>
+  COOKBOOK
+  </h1>
+
+<ol>
+<% @recipes.each_with_index do |recipe, index| %>
+  <li> <%= recipe.name %> <a href="/delete/<%= index %>">delete</a> </li>
+<% end %>
+</ol>
+
+<a href="/new">Add Recipe</a>
